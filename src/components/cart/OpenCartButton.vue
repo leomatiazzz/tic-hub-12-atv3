@@ -14,7 +14,7 @@ export default defineComponent({
     title: {
       type: String,
       required: false,
-      default: 'Meu Carrinho',
+      default: 'Carrinho de compras',
     },
     totalInCart: {
       type: Number,

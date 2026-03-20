@@ -59,7 +59,7 @@ const headsetSonyPulse: Product = new Product(
 
 const ghostOfYotei: Product = new Product(
   '6',
-  'Ghost of Yotei Standard Edition (Físico)',
+  'Ghost of Yötei Standard Edition (Físico)',
   334.0,
   game,
   Shipment.AMAZON,

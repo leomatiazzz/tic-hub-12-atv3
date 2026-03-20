@@ -71,7 +71,7 @@ export default defineComponent({
     <aside class="cart-container">
       <h1 class="title">
         <IconShopping class="icon-cart" />
-        Carrinho de compras
+        Meu carrinho
       </h1>
       <section class="cart-total" v-if="(cart?.list.length ?? 0) > 0">
         <div class="info">
