@@ -9,7 +9,7 @@ export class Cart {
   }
 
   get totalAmount(): number {
-    return this.list.reduce((acc, item) => acc + item.price * item.quantity, 0)
+    return this.list.reduce((acc, item) => acc + item.price, 0)
   }
 
   get totalAmountWithDiscount(): number {
