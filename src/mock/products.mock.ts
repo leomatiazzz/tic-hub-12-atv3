@@ -21,7 +21,7 @@ const godOfWar: Product = new Product(
   Shipment.AMAZON,
   'https://m.media-amazon.com/images/I/8136lnf0n2L.jpg',
   'Plataforma: PlayStation 5. Edição: Standard Edition. Formato: Físico.',
-   0,
+  5,
 )
 
 const eldenRing: Product = new Product(
@@ -57,4 +57,22 @@ const headsetSonyPulse: Product = new Product(
   25,
 )
 
-export const productsMock = [ps5, godOfWar, eldenRing, finalFantasyViiRemake, headsetSonyPulse]
+const ghostOfYotei: Product = new Product(
+  '6',
+  'Ghost of Yotei Standard Edition (Físico)',
+  334.0,
+  game,
+  Shipment.AMAZON,
+  'https://m.media-amazon.com/images/I/81wZZYD9iTL.jpg',
+  'Plataforma: PlayStation 5. Edição: Standard Edition. Formato: Físico.',
+  0,
+)
+
+export const productsMock = [
+  ps5,
+  godOfWar,
+  eldenRing,
+  finalFantasyViiRemake,
+  headsetSonyPulse,
+  ghostOfYotei,
+]
