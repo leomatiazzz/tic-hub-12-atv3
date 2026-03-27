@@ -1,5 +1,5 @@
 <script lang="ts">
-import ProductCard from '@/components/card/ProductCard.vue'
+import ProductCardPrime from '@/components/card/ProductCardPrime.vue'
 import { productsMock } from '@/mock/products.mock'
 import { Cart } from '@/model/cart.model'
 import CartComponent from '@/components/cart/CartComponent.vue'
@@ -9,7 +9,7 @@ export default {
   name: 'ProductPage',
   components: {
     CartComponent,
-    ProductCard,
+    ProductCardPrime,
   },
   data() {
     return {
@@ -50,7 +50,7 @@ export default {
       </div>
 
       <div class="product-list">
-        <ProductCard
+        <ProductCardPrime
           v-for="product in products"
           :key="product.id"
           :product="product"
@@ -88,7 +88,7 @@ export default {
   font-weight: 700;
   letter-spacing: 3px;
   text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
-  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .hero-content p {
