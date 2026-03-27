@@ -1,147 +1,103 @@
 # 🛒 TICommerce
 
-**Repositório da atividade 3 da Trilha Full-Stack do Programa TIC-HUB-12**
+Repositório da **Atividade 3** da trilha Full-Stack (TIC-HUB-12): uma loja virtual de tecnologia e games construída com Vue 3 + TypeScript.
 
-Uma aplicação web moderna e responsiva para compra de consoles, games e acessórios de tecnologia, desenvolvida com Vue 3, TypeScript e Vite.
+## ✅ O que já foi implementado
 
-## ✨ Funcionalidades
+- Catálogo com 6 produtos (incluindo **Ghost of Yötei**)
+- Carrinho funcional com adicionar, remover, limpar e totalização
+- Cálculo de desconto por item e economia total no carrinho
+- Correção da regra de total para evitar multiplicação duplicada de quantidade
+- Integração de **PrimeVue** no projeto
+- Uso de componentes PrimeVue no catálogo: **Card** e **Button**
+- Configuração de **Tailwind CSS v4**
+- Novo card de produto com visual escuro, imagem em fundo branco e hover suave
+- Padronização tipográfica com fonte **Quicksand** em toda a aplicação
 
-- 🎮 Catálogo de produtos com filtros
-- 🛒 Carrinho de compras funcional
-- 💰 Cálculo automático de descontos
-- 🎯 Design responsivo e moderno
-- ⚡ Performance otimizada com Vite
-- 🎨 Interface intuitiva e atrativa
+## 🧰 Tecnologias utilizadas
 
-## 🛠️ Tecnologias Utilizadas
-
-- **Vue 3** - Framework progressivo
-- **TypeScript** - Type safety
-- **Vite** - Build tool e dev server
-- **Vue Router** - Roteamento
-- **Pinia** - State management (estruturado para escalabilidade)
-- **ESLint** - Linting e qualidade de código
+- Vue 3
+- TypeScript
+- Vite
+- Vue Router
+- Pinia
+- PrimeVue
+- PrimeIcons
+- Tailwind CSS v4
+- ESLint + Prettier
 
 ## 📋 Pré-requisitos
 
-- Node.js (v16 ou superior)
-- npm ou yarn
+- Node.js `^20.19.0` ou `>=22.12.0`
+- npm
 
-## 🚀 Instalação e Setup
+## 🚀 Como executar
 
-### 1. Clone o repositório
+### 1. Clonar o projeto
 
 ```bash
 git clone https://github.com/leomatiazzz/tic-hub-12-atv2.git
 cd tic-hub-12-atv2
 ```
 
-### 2. Instale as dependências
+### 2. Instalar dependências
 
 ```bash
 npm install
 ```
 
-### 3. Execute o servidor de desenvolvimento
+### 3. Rodar em desenvolvimento
 
 ```bash
 npm run dev
 ```
 
-A aplicação estará disponível em `http://localhost:5173`
+Observação: o Vite usa por padrão `http://localhost:5173`, mas pode mudar de porta se ela já estiver em uso.
 
-## 📦 Scripts Disponíveis
-
-### Desenvolvimento
+## 📦 Scripts
 
 ```bash
-npm run dev
+npm run dev        # servidor de desenvolvimento
+npm run build      # type-check + build de produção
+npm run preview    # pré-visualizar build local
+npm run lint       # linting (oxlint + eslint)
+npm run format     # formatação com prettier
 ```
 
-Inicia o servidor de desenvolvimento com hot-reload.
+## 📁 Estrutura principal
 
-### Build para Produção
-
-```bash
-npm run build
-```
-
-Compila e otimiza o projeto para produção.
-
-### Linting
-
-```bash
-npm run lint
-```
-
-Verifica a qualidade do código com ESLint.
-
-### Formatação de Código
-
-```bash
-npm run format
-```
-
-Formata o código automaticamente.
-
-## 📁 Estrutura do Projeto
-
-```
+```text
 src/
-├── components/        # Componentes reutilizáveis
-│   ├── card/         # Cards de produtos
-│   ├── cart/         # Componentes do carrinho
-│   ├── icons/        # Ícones SVG
-│   └── NavBar.vue    # Barra de navegação
-├── views/            # Páginas da aplicação
-│   ├── HomeView.vue  # Página inicial
-│   └── AboutView.vue # Página sobre
-├── model/            # Modelos de dados
-├── enum/             # Enumerações
-├── mock/             # Dados mockados
-├── utils/            # Utilitários
-├── router/           # Configuração de rotas
-├── stores/           # State management (Pinia)
-├── assets/           # Estilos e imagens
-└── App.vue           # Componente raiz
+├── components/
+│   ├── card/
+│   │   ├── ProductCard.vue
+│   │   └── ProductCardPrime.vue
+│   └── cart/
+├── mock/
+│   └── products.mock.ts
+├── model/
+│   ├── cart.model.ts
+│   └── product.model.ts
+├── views/
+│   ├── HomeView.vue
+│   └── AboutView.vue
+├── assets/
+│   ├── base.css
+│   └── main.css
+└── main.ts
 ```
 
-## 🎯 Funcionalidades Principais
+## 🎯 Próximos passos sugeridos
 
-### Página Inicial
-
-- Banner com apresentação da loja
-- Catálogo de produtos em grid responsivo
-- Botão de adicionar ao carrinho em cada produto
-- Exibição de descontos e frete grátis
-
-### Carrinho de Compras
-
-- Visualização de itens adicionados
-- Ajuste de quantidades
-- Cálculo automático de totais e descontos
-- Remoção de itens
-
-### Página Sobre
-
-- Informações do desenvolvedor
-- Links para redes sociais (GitHub, LinkedIn, Instagram)
-
-## 🎨 Design e Estilos
-
-O projeto utiliza um design moderno com:
-
-- **Paleta de cores**: Gradientes roxo/azul vibrantes
-- **Tema escuro**: Interface dark mode para reduzir fadiga visual
-- **Responsividade**: Adaptado para desktop, tablet e mobile
-- **Animações**: Transições suaves e efeitos hover
+- Migrar dados mockados para API real
+- Adicionar autenticação de usuário
+- Evoluir o checkout com etapas e pagamento
+- Criar painel administrativo de produtos e pedidos
 
 ## 👤 Autor
 
-**Léo Matias** - Desenvolvedor Full Stack
+**Léo Matias**
 
-### Conecte-se comigo:
-
-- 🔗 [GitHub](https://github.com/leomatiazzz)
-- 💼 [LinkedIn](https://www.linkedin.com/in/leomatias/)
-- 📷 [Instagram](https://www.instagram.com/leomvtias)
+- GitHub: [leomatiazzz](https://github.com/leomatiazzz)
+- LinkedIn: [leomatias](https://www.linkedin.com/in/leomatias/)
+- Instagram: [@leomvtias](https://www.instagram.com/leomvtias)
